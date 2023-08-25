@@ -1,0 +1,57 @@
+.hero-contain{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.left{
+    position: relative;
+}
+
+.left-det{
+    position: absolute;
+    background-color: rgba(18, 18, 18, 0.835);
+    padding: 10px 20px;
+    bottom: 7px;
+    color: rgba(226, 226, 226, 0.901);
+}
+
+.left-det p{
+    font-size: 10px;
+}
+
+@media (max-width: 550px) {
+    .left-det h3{
+        font-size: 15px;
+    }
+}
+
+.right-detail{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.right-detail hr{
+    margin-top: 10px;
+}
+
+.right-detail p{
+    font-size: 10px;
+}
+
+.right-detail h4{
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    .hero-contain{
+        flex-direction: column;
+    }
+
+    .left img{
+        width: 100%;
+    }
+}

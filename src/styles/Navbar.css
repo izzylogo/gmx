@@ -1,0 +1,129 @@
+.left a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c449b;
+    padding: 10px 30px;
+}
+
+.middle{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.middle .input-cover{
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    padding-right: 0px;
+    border-radius: 6px;
+}
+
+.middle .input-cover input{
+    border: none;
+    background-color: white;
+    padding: 7px 10px;
+    outline: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.middle .input-cover .icon{
+    display: flex;
+    align-items: left;
+    background-color: #6e9804;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 5px 10px;
+}
+
+.middle .help{
+    color: white;
+}
+
+.middle .help p{
+    margin-top: -10px;
+    padding: 0px;
+    font-size: 13px;
+}
+
+.right button{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 6px;
+    padding: 10px 15px;
+    transition: 0.3s ease;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.right button:hover{
+    background-color: white;
+    color: #1c449b;
+}
+
+@media (max-width: 900px) {
+    .right {
+        display: none;
+    }
+}
+
+.nav-bottom{
+    color: black;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-left{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.bottom-left ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottom-left ul li{
+    font-size: 12px;
+}
+
+.nav-bottom .logo{
+    display: flex;
+    gap: 5px;
+}
+
+@media (max-width: 500px) {
+    .nav-bottom .logo{
+        display: none;
+    }
+
+    .bottom-left ul li{
+        font-size: 10px;
+    }
+
+    .bottom-left ul{
+        gap: 5px;
+    }
+
+    .left a h1{
+        font-size: 30px;
+    }
+
+    .middle .help{
+        display: none;
+    }
+}
