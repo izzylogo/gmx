@@ -57,6 +57,7 @@
     background-color: #6e9804;
     border: none;
     font-weight: 700;
+    cursor: pointer;
 }
 
 @media (max-width: 900px) {
