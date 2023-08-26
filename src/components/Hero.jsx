@@ -7,10 +7,10 @@ const Hero = () => {
     <div className='hero'>
         <div className="hero-contain">
             <div className="left">
-                <img src="https://i0.gmx.net/image/600/38562600,pd=6,h=300,w=530/unwetter-bayern-verletzte-campingplatz-lindau.jpg" alt="image" />
+                <img src="https://i0.gmx.net/image/392/38559392,pd=2,h=300,w=530.jpg" alt="image" />
                 <div className="left-det">
-                    <p>Accident</p>
-                    <h3>Record heat in the ocean: development in the ocean is fatal</h3>
+                    <p>Business</p>
+                    <h3>Expert worried about Germany: "There is a risk of loss of Prosperity here."</h3>
                 </div>
             </div>
             <div className="right">

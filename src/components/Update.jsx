@@ -7,9 +7,9 @@ const Update = () => {
     <div className='update'>
         <div className="update-cover">
             <div className="update-left">
-                <img src="https://i0.gmx.net/image/484/38563484,pd=3,h=170,w=300/roland-kaiser.jpg" alt="left-img" />
-                <h6 className='white'>stars</h6>
-                <h4>Rare photos: Roland Kaiser shows his two grandchildren</h4>
+                <img src="https://i0.gmx.net/image/924/38565924,pd=1,h=170,w=300/heiratsantrag-goldmedaille.jpg" alt="left-img" />
+                <h6 className='white'>World's Championships in Athletics</h6>
+                <h4>Geher surprises his teammate at the finish with pure romance</h4>
                 <h6 style={{fontSize: "10px"}} className='white'>16 minutes ago</h6>
             </div>
             <div className="update-middle">
@@ -23,9 +23,9 @@ const Update = () => {
                 ))}
             </div>
             <div className="update-left">
-                <img src="https://i0.gmx.net/image/484/38563484,pd=3,h=170,w=300/roland-kaiser.jpg" alt="left-img" />
-                <h6 className='white'>stars</h6>
-                <h4>Rare photos: Roland Kaiser shows his two grandchildren</h4>
+                <img src="https://i0.gmx.net/image/424/38566424,pd=1,h=170,w=300/wetter-schwuel-durchwachsen-angenehm-sonnig.jpg" alt="left-img" />
+                <h6 className='white'>Weather</h6>
+                <h4>Changeable prospects: from muggy and overcast to pleasant and sunny</h4>
                 <h6 className='white' style={{fontSize: "10px"}}> 16 minutes ago</h6>
             </div>
         </div>

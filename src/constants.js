@@ -1,34 +1,34 @@
 export const rightDetail = [
     {
-        title: 'obituary',
-        detail: `At the age of 36: wrestling star Bray Wyatt died unexpectedly`,
+        title: 'war in ukraine',
+        detail: `Ambassador gives reason for difficulties in Ukrainian counter-offensive`,
     },
     {
         title: 'stars',
-        detail: `Gwyneth Paltrow's body double in "The Heart of Love" nearly starved himself to death`,
+        detail: `BVB sports director Sebastian Kehl separates from childhood love after 26 years`,
     },
     {
-        title: 'World Championships in Athletics',
-        detail: `Moment of shock for sprint stars before the 200-meter semifinals`,
+        title: 'Hamburg',
+        detail: `Man shot dead on the street: perpetrators on the run`,
     },
     {
-        title: 'Hawaii',
-        detail: `Maui sues local electric company after fire disaster`,
+        title: 'Noble',
+        detail: `Haakon and Mette-Marit have two reasons to celebrate`,
     },
 ]
 
 export const rightDetail2 = [
     {
-        title: 'obituary',
-        detail: `At the age of 36: wrestling star Bray Wyatt died unexpectedly`,
-    },
-    {
         title: 'stars',
-        detail: `Gwyneth Paltrow's body double in "The Heart of Love" nearly starved himself to death`,
+        detail: `Jailed R. Kelly has to pay victims more than $10 million`,
     },
     {
-        title: 'World Championships in Athletics',
-        detail: `Moment of shock for sprint stars before the 200-meter semifinals`,
+        title: 'style',
+        detail: `Daniela Katzenberger has lost seven kilos`,
+    },
+    {
+        title: 'Consumer',
+        detail: `Gas and electricity prices on the decline: is it worth changing providers now?`,
     },
     {
         title: 'Hawaii',
