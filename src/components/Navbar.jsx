@@ -26,7 +26,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="right">
-                    <button>Mail-Account anlegen</button>
+                    <button>Mail-Account anlegen...</button>
                 </div>
             </div>
             <div className="nav-bottom">
