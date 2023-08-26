@@ -15,18 +15,18 @@ const Navbar = () => {
                 </div>
                 <div className="middle">
                     <div className="input-cover">
-                        <input type="text" placeholder='search'/>
+                        <input type="text" placeholder='Suchen mit GMX'/>
                         <div className="icon">
                             <AiOutlineSearch color='white' fontSize={20} />
                         </div>
                     </div>
                     <div className="help">
                         <AiFillQuestionCircle color='white' fontSize={25}/>
-                        <p>Help</p>
+                        <p>Hilfe</p>
                     </div>
                 </div>
                 <div className="right">
-                    <button>Create mail account</button>
+                    <button>Mail-Account anlegen</button>
                 </div>
             </div>
             <div className="nav-bottom">

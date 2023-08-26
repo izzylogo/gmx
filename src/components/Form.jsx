@@ -93,7 +93,7 @@ const Form = () => {
                                 type="text" 
                                 value={email} 
                                 onChange={(e) => setEmail(e.target.value)} 
-                                placeholder='E-mail address' 
+                                placeholder='E-Mail-Adresse' 
                             />   
                         </div>
                     </div>
@@ -103,7 +103,7 @@ const Form = () => {
                              value={password} 
                              onChange={(e) => setPassword(e.target.value)} 
                              // required 
-                             placeholder='Password'
+                             placeholder='Passwort'
                         />
                         <AiFillEye color='#bcbcbc' fontSize={20}/>
                     </div>
