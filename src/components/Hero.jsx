@@ -18,7 +18,7 @@ const Hero = () => {
                     <hr />
                     {rightDetail.map((det) => (
                         <div className='right-detail'>
-                            <p>{det.title}</p>
+                            <p className='white' style={{fontSize: '14px'}}>{det.title}</p>
                             <h4>{det.detail}</h4>
                             <hr />
                         </div>
