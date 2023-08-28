@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Form, Hero, Navbar, News, Update } from './components'
+import { Footer, Form, Hero, Navbar, News, Update } from './components'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -46,6 +46,7 @@ function App() {
         title2="Frauenfußball"
         head2={`Spaniens Fußballerinnen streiken - Jenni Hermoso: Habe dem Kuss nicht zugestimmt`}
       />
+      <Footer/>
     </div>
   )
 }
