@@ -38,6 +38,7 @@
 .email-form input, .password input{
     border: none;
     outline: none;
+    color: black;
 }
 
 .password {
