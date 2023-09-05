@@ -1,37 +1,37 @@
 export const rightDetail = [
-    {
-        title: 'Fußball',
-        detail: `Kuss-Debatte eskaliert: Verband droht Hermoso mit Klage`,
-    },
-    {
-        title: 'stars',
-        detail: `BVB-Sportdirektor Sebastian Kehl trennt sich nach 26 Jahren von Jugendliebe`,
-    },
-    {
-        title: 'Wirtschaft',
-        detail: `Experte in Sorge um Deutschland: "An dieser Stelle droht Wohlstandsverlust"`,
-    },
-    {
-        title: 'Hamburg',
-        detail: `Mann auf offener Straße erschossen: Täter auf der Flucht`,
-    },
+  {
+    title: 'Festival',
+    detail: `Burning-Man im Schlamm: Hoffnung auf Abreise`,
+  },
+  {
+    title: 'Krieg gegen die Ukraine',
+    detail: `Putin knüpft Neuauflage von Getreideabkommen an Bedingungen`,
+  },
+  {
+    title: 'Musik',
+    detail: `Rolling Stones kündigen neue Ära der Band mit frischem Album an`,
+  },
+  {
+    title: 'Nordkorea',
+    detail: `Berichte: Kim Jong Un will Putin besuchen`,
+  },
 ]
 
 export const rightDetail2 = [
-    {
-        title: 'Leichtathletik-WM',
-        detail: `Geher überrascht Teamkollegin im Ziel mit Romantik pur`,
-    },
-    {
-        title: 'Stars',
-        detail: `Inhaftierter R. Kelly muss Opfern über zehn Millionen Dollar zahlen`,
-    },
-    {
-        title: 'LifeStyle',
-        detail: `Daniela Katzenberger hat sieben Kilo abgenommen`,
-    },
-    {
-        title: 'Verbraucher',
-        detail: `Gas- und Strompreise auf Talfahrt: Lohnt sich jetzt ein Anbieter-Wechsel?`,
-    },
+  {
+    title: 'Stars',
+    detail: `Auf offener Straße: Formel-1-Fahrer wird 300.000-Euro-Luxusuhr gestohlen`,
+  },
+  {
+    title: 'Fußball',
+    detail: `Nagelsmann: Der Unvollendete muss zurück zur Arbeit`,
+  },
+  {
+    title: 'Satirischer Wochenrückblick',
+    detail: `Gekaufter Adelstitel und fragwürdiger Intellekt: Die Welt von Marcus von Anhalt`,
+  },
+  {
+    title: 'Psychologie',
+    detail: `Fataler Irrtum: Solche Ich-Botschaften verschärfen Konflikte`,
+  },
 ]
