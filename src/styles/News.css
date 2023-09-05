@@ -24,6 +24,10 @@
     color: rgba(43, 43, 43, 0.918);
 }
 
+.right-side img{
+    width: 100%;
+}
+
 .news-contain h5{
     font-size: 15px;
     max-width: 80%;

@@ -1,8 +1,8 @@
 .hero-contain{
     padding: 20px 30px;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .left{
@@ -48,10 +48,14 @@
 
 @media (max-width: 900px) {
     .hero-contain{
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .left img{
+        width: 100%;
+    }
+
+    .left-det{
         width: 100%;
     }
 }

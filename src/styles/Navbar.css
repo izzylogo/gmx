@@ -72,7 +72,7 @@
 }
 
 @media (max-width: 900px) {
-    .right {
+    .nav-top .right {
         display: none;
     }
 }
